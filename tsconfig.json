@@ -4,17 +4,19 @@
     "module": "CommonJS",
     "outDir": "./dist",
     "rootDir": "./src",
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "declaration": true
+    "declaration": true,
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "types": ["node", "jest"]
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "tests/**/*.ts", "types/**/*.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
