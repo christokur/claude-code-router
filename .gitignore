@@ -2,4 +2,6 @@ node_modules
 .env
 log.txt
 .idea
+distcoverage
 dist
+**/dist
